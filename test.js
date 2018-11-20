@@ -1,9 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * Module dependencies.
- */
-
 const program = require('commander');
 const fs = require('fs');
 const path = require('path');
@@ -14,10 +10,9 @@ program
   .option('-f, --file [type]', 'file name')
   .parse(process.argv);
 
-program.help();
 
-// console.log('%s/%s', program.dir, program.file);
 if (!program.dir && !program.file) {
+  program.help();
   return;
 }
 
