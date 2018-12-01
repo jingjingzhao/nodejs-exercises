@@ -3,6 +3,7 @@
 // #!/usr/bin/env node 表示指定node来执行该脚本。
 // 所以可以直接使用 ./test.js来执行脚本。 
 // ./表示从path中查找
+// change username jingjingzhao
 
 const program = require('commander');
 const fs = require('fs');
